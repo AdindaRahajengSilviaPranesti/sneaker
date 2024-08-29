@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.hero {
+    padding: 5px 0;
+    background-color: #F3F4F6; /* Soft background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.hero .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero .play-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ba0006;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .play-button:hover {
+    background-color: #b24143;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Adds a rounded corner to the image */
+    margin-left: 200px;
+}
+
+@media (max-width: 768px) {
+    .hero .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+}
+
+.about {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional background color */
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.about-image img {
+    width: 370px;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.about-text {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    margin-bottom: 15px;
+}
+
+.about-text ul li b {
+    font-weight: bold;
+}
+
+
+
+.brands {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.brands h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: #242323;
+    font-weight: bold;
+}
+
+.brands-logos img {
+    width: 150px; 
+    height: auto; 
+    border-radius: 30px;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr); 
+
+}
+
+
+.logo img {
+    width: 120px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 15px;
+}
+
+
+.button {
+    margin-right: 15px;
+}
+
+.button :hover{
+    color: #c00000;
+}
+
+
+.jointeam {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Optional background color */
+}
+
+.jointeam .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.join img {
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.join {
+    font-size: 50px; /* Mengatur ukuran font */
+    text-align: center;
+    color: #333; /* Mengatur warna teks */
+    margin-top: 20px; /* Mengatur jarak atas */
+    margin-bottom: 20px; /* Mengatur jarak bawah */
+}
+
+
+.join-text {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.joinjez {
+    background-color: #960505; /* Base color for the button */
+    color: #fff; /* White text for contrast */
+    padding: 15px 30px; /* Spacious padding */
+    font-size: 1.2rem; /* Slightly larger font for emphasis */
+    font-weight: bold; /* Bold text for prominence */
+    border: none; /* Remove default border */
+    border-radius: 50px; /* Rounded edges for a sleek look */
+    text-transform: uppercase; /* Capitalize the text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.joinjez:hover {
+    background-color: #8d122f; /* Lighter shade on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.joinjez:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(90, 178, 255, 0.5); /* Add a focus ring for accessibility */
+}
+
+.joinjez:active {
+    transform: translateY(0); /* Reset lift effect when button is pressed */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Reduce shadow when pressed */
+}
+
+
+footer{
+align-items: center;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd; /* Light gray border at the top */
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555; /* Dark gray text for the footer bottom */
+    background-color: #F3F4F6;
+    font-weight: bold;
+}
+
+.footer-section.location {
+    text-align: start; /* Center the text and image within the section */
+}
+
+.footer-section.location img {
+    max-width: 90%; /* Ensure the image doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+
+.footer-section.company {
+    text-align: start; /* Center the text and image within the section */
+    color: #242323;
+}
+
+
+
+.footer ul li a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.footer ul li a:hover {
+    color: #680000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+}
+
+.footer-section.contact{
+    text-align: start; /* Center the text and image within the section */
+    color: #242323;
+}
+
